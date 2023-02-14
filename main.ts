@@ -1,6 +1,9 @@
 input.onButtonPressed(Button.A, function () {
     uña = 0
 })
+input.onButtonPressed(Button.AB, function () {
+    radio.setGroup(0 * (10 * 10))
+})
 radio.onReceivedString(function (receivedString) {
     led.plot(parseFloat(receivedString.substr(0, 1)), parseFloat(receivedString.substr(1, 1)))
 })
